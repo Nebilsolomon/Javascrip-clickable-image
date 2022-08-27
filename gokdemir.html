@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    .body{
+       
+
+  width: 100%;
+  height: 100%;
+
+    }
+    .nebil{
+        position: absolute;
+     
+        bottom: 0;
+       
+    
+        
+       
+    }
+    .imgSmall{
+        height: 100px;  
+       width: 100px;
+       border: 3px black solid;   
+     
+    }
+      
+       #gokdemir{
+        height: 200px;  
+       width: 200px;
+       border: 3px black solid;
+      
+
+       }
+     
+
+        </style>
+       
+
+       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$("#nebil0").hover(function(){
+    var src = $(this).attr("src");
+
+$("#gokdemir").attr("src", src);
+
+var href = $("#nebil01").attr("href")
+$("#main").attr("href", href)
+})
+$("#nebil1").hover(function(){
+    var src = $(this).attr("src");
+           
+$("#gokdemir").attr("src", src);
+var href = $("#nebil02").attr("href")
+$("#main").attr("href", href)
+})
+$("#nebil2").hover(function(){
+    var src = $(this).attr("src");
+           
+$("#gokdemir").attr("src", src);
+var href = $("#nebil03").attr("href")
+$("#main").attr("href", href)
+})
+$("#nebil3").hover(function(){
+    var src = $(this).attr("src");
+           
+$("#gokdemir").attr("src", src);
+
+var href = $("#nebil04").attr("href")
+$("#main").attr("href", href)
+
+})
+
+
+
+
+
+})
+</script>
+    
+    </head>
+</head>
+<body class="body">
+
+
+<a href="#" target="self" id="main"><img id="gokdemir" src="google.png" /></a>
+<div class="nebil">
+<a id="nebil01" href="http://facebook.com"><img  id="nebil0" class="imgSmall" src="facebook.png" ></a>
+<a id="nebil02" href="http://microsoft.com"><img  id="nebil1" class="imgSmall" src="microsoft.png" /></a>   
+<a id="nebil03"  href="http://apple.com"><img  id="nebil2" class="imgSmall" src="apple.png" /></a>   
+<a id="nebil04" href="http://youtube.com"><img  id="nebil3"  class="imgSmall" src="youtube.png" /></a>   
+
+</div>
+
+</body>
+</html>
